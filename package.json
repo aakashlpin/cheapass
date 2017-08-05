@@ -1,0 +1,36 @@
+{
+  "name": "cheapass",
+  "version": "0.0.1",
+  "description": "The Cheapass platform",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.5",
+    "next": "^3.0.1-beta.20",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "validator": "^8.0.0"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "nodemon --watch backend server.js",
+    "dev": "npm run watch",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakashlpin/cheapass.git"
+  },
+  "author": "Aakash Goel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aakashlpin/cheapass/issues"
+  },
+  "homepage": "https://github.com/aakashlpin/cheapass#readme"
+}
