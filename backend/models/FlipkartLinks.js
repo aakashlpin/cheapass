@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const url = require('url');
-const sellerSchema = require('./_sellerSchema');
+const sellerSchema = require('./_sellerLinksSchema');
 
 mongoose.Promise = global.Promise;
 
@@ -27,7 +27,7 @@ flipkartSchema.pre('find', sanitizeURL);
 flipkartSchema.pre('findOne', sanitizeURL);
 
 module.exports = {
-  model: mongoose.model('FlipkartLink', flipkartSchema),
+  model: mongoose.model('flipkart_link', flipkartSchema),
   _tests: {
     sanitizeURL,
   },

@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
-const sellerSchema = require('./_sellerSchema');
-
-mongoose.Promise = global.Promise;
+const sellerSchema = require('./_sellerLinksSchema');
 
 const amazonSchema = sellerSchema;
 
@@ -23,7 +21,7 @@ amazonSchema.pre('find', sanitizeUrl);
 amazonSchema.pre('findOne', sanitizeUrl);
 
 module.exports = {
-  model: mongoose.model('AmazonLink', amazonSchema),
+  model: mongoose.model('amazon_link', amazonSchema),
   _tests: {
     getSanitizedUrl,
   },
