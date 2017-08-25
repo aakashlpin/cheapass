@@ -5,10 +5,10 @@ export default () => (
   <div className="wrapper">
     <Header />
     <section role="main">
-      <h1>Don't be an idiot buying at MRP!</h1>
+      <h5>Don't be an idiot buying at MRP!</h5>
       {/* when prices drop <> on bank offers <> on credit card offers <> on festive season offers */}
-      <h1 className="bumpup">Get real time alerts <span className="highlighted">when prices drop</span></h1>
-      <h1>Receive notifications on <span className="underline">email</span>, <span className="underline">mobile</span>, and <span className="underline">sms</span>.</h1>
+      <h2>Get real time alerts <span className="highlighted">when prices drop</span></h2>
+      <h5>Receive notifications on <span className="underline">email</span>, <span className="underline">mobile</span>, and <span className="underline">sms</span>.</h5>
     </section>
 
     <section>

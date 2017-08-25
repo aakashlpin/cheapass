@@ -1,0 +1,37 @@
+$white: #fefefe;
+$topbar-background: $white;
+$body-font-family: 'Open Sans', sans-serif;
+$header-font-weight: 500;
+
+@import 'foundation/scss/foundation';
+
+/**
+  @import 'foundation/scss/foundation';
+  ^^^^^ this at the top
+  makes all foundation components available via functions
+  simply @include any module to use it
+**/
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: 'Merriweather', serif;
+// }
+
+.wrapper {
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+

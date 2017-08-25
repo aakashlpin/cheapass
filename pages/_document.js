@@ -1,6 +1,7 @@
 // ./pages/_document.js
 import Document, { Head, Main, NextScript } from 'next/document'
 import flush from 'styled-jsx/server'
+import stylesheet from 'styles/base.scss'
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -14,8 +15,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet" />
-          <link rel="stylesheet" href="/static/base.css" />
-          <style>{`body { margin: 0 } /* custom! */`}</style>
+          <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         </Head>
         <body className="custom_class">
           {this.props.customValue}
