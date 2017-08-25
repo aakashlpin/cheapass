@@ -11,8 +11,10 @@ export default () => (
       </div>
       <div>
         <ul>
-          <li><a href="">Plugin</a></li>
-          <li><a href="">Signup</a></li>
+          <li><a href="">Download for iOS</a></li>
+          <li><a href="">Download for Android</a></li>
+          <li><a href="">Bookmarklet</a></li>
+          <li><a href="">Signin</a></li>
         </ul>
       </div>
     </header>
