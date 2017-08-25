@@ -13,8 +13,9 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <style>{`body { margin: 0 } /* custom! */`}</style>
           <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet" />
+          <link rel="stylesheet" href="/static/base.css" />
+          <style>{`body { margin: 0 } /* custom! */`}</style>
         </Head>
         <body className="custom_class">
           {this.props.customValue}
