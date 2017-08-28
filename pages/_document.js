@@ -14,10 +14,10 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Oswald:700|Roboto+Condensed:700|Lato|Fira+Sans" rel="stylesheet" />
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         </Head>
-        <body className="custom_class">
+        <body>
           {this.props.customValue}
           <Main />
           <NextScript />

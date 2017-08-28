@@ -2,8 +2,14 @@ $white: #fefefe;
 $topbar-background: $white;
 $body-font-family: 'Open Sans', sans-serif;
 $header-font-weight: 500;
+$anchor-color: #333333;
 
 @import 'foundation/scss/foundation';
+$grey: #333333;
+$green: #4caf50;
+$green-rgba-opaque: rgba(76, 175, 80, 0);
+$green-rgba-transparent: rgba(76, 175, 80, 0.4);
+$white: #F9F7EE;
 
 /**
   @import 'foundation/scss/foundation';
@@ -16,17 +22,20 @@ $header-font-weight: 500;
 @include foundation-grid;
 @include foundation-typography;
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: 'Merriweather', serif;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Sans',
+  serif;
+
+  font-weight: 900;
+}
 
 .wrapper {
-  padding: 1rem;
+  padding: 1.5rem 2.5rem;
 }
 
 ul {
@@ -35,3 +44,71 @@ ul {
   margin: 0;
 }
 
+.underline {
+  display: inline-block;
+  border-bottom: 2px solid $green;
+}
+
+.highlighted {
+  padding: 0.1rem 0.5rem;
+  background: $green;
+  color: $white;
+}
+
+a {
+  transition: all 0.1s linear;
+  color: $grey;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+a:hover,
+a:active {
+  color: $green;
+  border-bottom-color: $green;
+}
+
+.pulse {
+	display: block;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: $green;
+	cursor: pointer;
+	box-shadow: 0 0 0 $green-rgba-transparent;
+	animation: pulse 2s infinite;
+}
+
+// .pulse:hover {
+// 	animation: none;
+// }
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 $green-rgba-transparent;
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px $green-rgba-opaque;
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 $green-rgba-opaque;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 $green-rgba-transparent;
+		box-shadow: 0 0 0 0 $green-rgba-transparent;
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 10px $green-rgba-opaque;
+		box-shadow: 0 0 0 10px $green-rgba-opaque;
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 $green-rgba-opaque;
+		box-shadow: 0 0 0 0 $green-rgba-opaque;
+	}
+}

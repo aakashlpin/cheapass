@@ -1,7 +1,7 @@
 import c from '../palette/three';
 
 export default () => (
-  <div>
+  <div className="wrapper soft-padding--top">
     <header>
       <div>
         <img
@@ -23,15 +23,9 @@ export default () => (
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3rem;
       }
       img {
         width: 134px;
-      }
-      a {
-        color: ${c.blue};
-        text-decoration: none;
-        border-bottom: 3px solid ${c.blue};
       }
       ul > li {
         display: inline-block;
